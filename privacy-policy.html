@@ -5,49 +5,278 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Política de Privacidade - Bíblia Offline de Estudo</title>
     <style>
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; max-width: 850px; margin: 0 auto; padding: 30px; background-color: #f9f9f9; }
-        .container { background: #fff; padding: 40px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
-        h1 { color: #2c3e50; border-bottom: 2px solid #3498db; padding-bottom: 10px; font-size: 1.8em; }
-        h2 { color: #2980b9; margin-top: 30px; font-size: 1.4em; }
-        p, li { margin-bottom: 15px; }
-        ul { margin-bottom: 20px; }
-        a { color: #3498db; text-decoration: none; }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.7;
+            color: #2c3e50;
+            background-color: #f0f4f8;
+            padding: 20px;
+        }
+        .container {
+            background: #fff;
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 48px 52px;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .header { text-align: center; margin-bottom: 40px; border-bottom: 3px solid #2980b9; padding-bottom: 24px; }
+        .header h1 { color: #1a252f; font-size: 2em; margin-bottom: 8px; }
+        .header .subtitle { color: #7f8c8d; font-size: 0.95em; }
+        h2 {
+            color: #2980b9;
+            font-size: 1.15em;
+            margin-top: 36px;
+            margin-bottom: 12px;
+            padding-left: 12px;
+            border-left: 4px solid #2980b9;
+        }
+        p { margin-bottom: 14px; color: #34495e; }
+        ul { margin: 10px 0 16px 24px; }
+        li { margin-bottom: 8px; color: #34495e; }
+        li strong { color: #2c3e50; }
+        .highlight-box {
+            background: #eaf4fb;
+            border: 1px solid #aed6f1;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .highlight-box p { margin: 0; }
+        .warning-box {
+            background: #fef9e7;
+            border: 1px solid #f9ca56;
+            border-radius: 6px;
+            padding: 16px 20px;
+            margin: 16px 0;
+        }
+        .warning-box p { margin: 0; }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 16px 0;
+            font-size: 0.93em;
+        }
+        th {
+            background: #2980b9;
+            color: white;
+            padding: 10px 14px;
+            text-align: left;
+        }
+        td {
+            padding: 9px 14px;
+            border-bottom: 1px solid #eaecee;
+            vertical-align: top;
+        }
+        tr:nth-child(even) td { background: #f8f9fa; }
+        a { color: #2980b9; text-decoration: none; }
         a:hover { text-decoration: underline; }
-        .footer { margin-top: 50px; font-size: 0.85em; color: #7f8c8d; border-top: 1px solid #eee; padding-top: 20px; }
+        .footer {
+            margin-top: 48px;
+            padding-top: 20px;
+            border-top: 1px solid #eaecee;
+            font-size: 0.85em;
+            color: #7f8c8d;
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background: #27ae60;
+            color: white;
+            border-radius: 4px;
+            padding: 2px 8px;
+            font-size: 0.78em;
+            font-weight: bold;
+            margin-left: 6px;
+            vertical-align: middle;
+        }
+        .badge-orange {
+            background: #e67e22;
+        }
     </style>
 </head>
 <body>
-
 <div class="container">
-    <h1>Política de Privacidade</h1>
-    <p>A sua privacidade é uma prioridade para nós. Esta política descreve como o aplicativo <strong>Bíblia Offline de Estudo</strong> gerencia informações e protege sua experiência de usuário.</p>
 
-    <h2>1. Coleta e Uso de Dados</h2>
-    <p>O aplicativo foi projetado para funcionar prioritariamente de forma <strong>offline</strong>. Não coletamos dados de identificação pessoal (como nome, telefone ou endereço) para o funcionamento das ferramentas de leitura e estudo.</p>
+    <div class="header">
+        <h1>Política de Privacidade</h1>
+        <p class="subtitle"><strong>Bíblia Offline de Estudo</strong> &nbsp;|&nbsp; Célio JR. &nbsp;|&nbsp; Última atualização: 30 de abril de 2026</p>
+    </div>
+
+    <div class="highlight-box">
+        <p>A sua privacidade é uma prioridade. Esta política descreve de forma transparente quais dados são coletados, como são usados e com quem são compartilhados. Leia com atenção antes de usar o aplicativo.</p>
+    </div>
+
+    <!-- 1 -->
+    <h2>1. Visão Geral</h2>
+    <p>O <strong>Bíblia Offline de Estudo</strong> foi projetado para funcionar principalmente sem conexão com a internet. No entanto, algumas funcionalidades opcionais — como sincronização em nuvem, relatórios de erros e compras — envolvem o envio de dados para servidores de terceiros de confiança.</p>
+
+    <!-- 2 -->
+    <h2>2. Dados Coletados e Finalidade</h2>
+
+    <table>
+        <tr>
+            <th>Dado</th>
+            <th>Quando é coletado</th>
+            <th>Finalidade</th>
+            <th>Armazenamento</th>
+        </tr>
+        <tr>
+            <td>Identificador anônimo de sessão (UID)</td>
+            <td>Sempre, ao abrir o app</td>
+            <td>Autenticação básica sem criar conta</td>
+            <td>Firebase Auth (Google)</td>
+        </tr>
+        <tr>
+            <td>Conta Google (e-mail, nome, foto)</td>
+            <td>Somente se o usuário fizer login com Google</td>
+            <td>Identificação para sincronização em nuvem</td>
+            <td>Firebase Auth (Google)</td>
+        </tr>
+        <tr>
+            <td>Marcadores, anotações e planos de leitura</td>
+            <td>Somente se o usuário fizer login com Google</td>
+            <td>Sincronização e backup em nuvem</td>
+            <td>Firebase Firestore (Google)</td>
+        </tr>
+        <tr>
+            <td>Histórico de leitura e conquistas</td>
+            <td>Sempre</td>
+            <td>Estatísticas de leitura e gamificação locais</td>
+            <td>Banco de dados local (SQLite)</td>
+        </tr>
+        <tr>
+            <td>Histórico de buscas</td>
+            <td>Sempre que uma pesquisa é realizada</td>
+            <td>Personalização do versículo diário e sugestões</td>
+            <td>Banco de dados local (SQLite)</td>
+        </tr>
+        <tr>
+            <td>Identificador de instalação</td>
+            <td>Sempre</td>
+            <td>Garantir versículo diário único por usuário/dia</td>
+            <td>Local (preferências do app)</td>
+        </tr>
+        <tr>
+            <td>Informações do dispositivo <span class="badge badge-orange">Suporte</span></td>
+            <td>Somente ao enviar mensagem de suporte</td>
+            <td>Diagnóstico de bugs e erros</td>
+            <td>Firebase Firestore (Google)</td>
+        </tr>
+        <tr>
+            <td>E-mail e telefone (opcional) <span class="badge badge-orange">Suporte</span></td>
+            <td>Somente se o usuário preencher ao enviar suporte</td>
+            <td>Retorno de contato pelo suporte</td>
+            <td>Firebase Firestore (Google)</td>
+        </tr>
+        <tr>
+            <td>Dados de falhas e erros</td>
+            <td>Automaticamente, quando ocorre um erro</td>
+            <td>Estabilidade e melhoria do aplicativo</td>
+            <td>Firebase Crashlytics (Google)</td>
+        </tr>
+        <tr>
+            <td>Dados de desempenho</td>
+            <td>Automaticamente durante o uso</td>
+            <td>Monitoramento de performance do app</td>
+            <td>Firebase Performance (Google)</td>
+        </tr>
+    </table>
+
+    <!-- 3 -->
+    <h2>3. Autenticação</h2>
+    <p>O aplicativo cria automaticamente uma <strong>sessão anônima</strong> ao ser aberto, sem exigir qualquer cadastro. Essa sessão é usada apenas para identificar o dispositivo de forma técnica e não está vinculada a nenhum dado pessoal.</p>
+    <p>O login com <strong>Google</strong> é completamente <strong>opcional</strong>. Ao fazer login, a conta anônima é vinculada à sua conta Google, permitindo a sincronização de dados em nuvem (marcadores, notas e planos de leitura). Ao sair da conta, o app retorna automaticamente à sessão anônima.</p>
+
+    <!-- 4 -->
+    <h2>4. Sincronização em Nuvem</h2>
+    <p>Quando o usuário realiza login com Google, os seguintes dados são sincronizados com o <strong>Firebase Firestore</strong>:</p>
     <ul>
-        <li><strong>Banco de Dados Local:</strong> Suas marcações, notas e históricos de busca (incluindo termos em Hebraico/Português) são armazenados localmente no seu dispositivo via SQLite e não são enviados para nossos servidores.</li>
-        <li><strong>Logs de Erro:</strong> Podemos utilizar ferramentas técnicas anônimas para monitorar travamentos e melhorar a estabilidade do sistema.</li>
+        <li>Anotações e notas de versículos</li>
+        <li>Marcadores (favoritos)</li>
+        <li>Planos de leitura personalizados e seu progresso</li>
+        <li>Último capítulo lido</li>
+    </ul>
+    <p>Esse recurso serve exclusivamente para permitir que o usuário acesse seus dados em diferentes dispositivos. Os dados são armazenados sob o identificador único (UID) da conta Google no Firebase.</p>
+    <div class="warning-box">
+        <p><strong>⚠️ Importante:</strong> Usuários que não fazem login com Google têm todos os seus dados armazenados <strong>exclusivamente no dispositivo</strong>. Esses dados não são enviados para nenhum servidor.</p>
+    </div>
+
+    <!-- 5 -->
+    <h2>5. Informações de Suporte e Relatório de Erros</h2>
+    <p>Ao usar o recurso de <strong>Suporte / Relatar Problema</strong>, o aplicativo coleta automaticamente as seguintes informações técnicas do dispositivo:</p>
+    <ul>
+        <li>Marca e modelo do dispositivo</li>
+        <li>Versão do Android</li>
+        <li>Versão e código do aplicativo</li>
+        <li>Fabricante</li>
+        <li>Tela em que o problema ocorreu</li>
+    </ul>
+    <p>O preenchimento de <strong>e-mail e telefone</strong> nesse formulário é completamente <strong>opcional</strong> e serve apenas para que nossa equipe entre em contato com o usuário, se necessário.</p>
+
+    <!-- 6 -->
+    <h2>6. Serviços de Terceiros</h2>
+    <p>O aplicativo utiliza os seguintes serviços de terceiros, cada um com sua própria política de privacidade:</p>
+    <ul>
+        <li><strong>Firebase Authentication</strong> — Autenticação anônima e via Google <a href="https://firebase.google.com/support/privacy" target="_blank">(Política Google)</a></li>
+        <li><strong>Firebase Firestore</strong> — Armazenamento e sincronização de dados em nuvem <a href="https://firebase.google.com/support/privacy" target="_blank">(Política Google)</a></li>
+        <li><strong>Firebase Crashlytics</strong> — Coleta automática de relatórios de falhas <a href="https://firebase.google.com/support/privacy" target="_blank">(Política Google)</a></li>
+        <li><strong>Firebase Performance Monitoring</strong> — Monitoramento de desempenho do app <a href="https://firebase.google.com/support/privacy" target="_blank">(Política Google)</a></li>
+        <li><strong>Google Play Billing</strong> — Processamento de compras in-app (versão Pro) <a href="https://payments.google.com/payments/apis-secure/get_legal_document?ldo=0&ldt=privacynotice" target="_blank">(Política Google)</a></li>
+        <li><strong>Text-to-Speech do Android</strong> — Leitura em áudio dos versículos (processamento local, sem envio de dados)</li>
     </ul>
 
-    <h2>2. Publicidade (Google AdMob)</h2>
-    <p>No momento, o aplicativo não exibe publicidade. Contudo, informamos que <strong>planejamos implementar o Google AdMob no futuro</strong> para viabilizar o desenvolvimento e manutenção do projeto.</p>
-    <p>Quando ativos, os anúncios poderão utilizar identificadores exclusivos do seu dispositivo para personalizar o conteúdo publicitário. O processamento desses dados será regido pelas políticas do Google AdMob.</p>
+    <!-- 7 -->
+    <h2>7. Compras In-App (Versão Pro)</h2>
+    <p>O aplicativo oferece uma <strong>versão Pro</strong> adquirida através do <strong>Google Play Billing</strong>. Todo o processamento de pagamento é realizado pelo Google. Não armazenamos dados de cartão de crédito ou informações financeiras em nossos servidores. A confirmação do status de compra é verificada diretamente com o Google Play.</p>
 
-    <h2>3. Faixa Etária</h2>
-    <p>Este aplicativo é destinado a usuários com <strong>18 anos ou mais</strong>. Não coletamos intencionalmente informações de crianças ou adolescentes.</p>
+    <!-- 8 -->
+    <h2>8. Permissões do Aplicativo</h2>
+    <p>O aplicativo solicita apenas as permissões estritamente necessárias para suas funcionalidades:</p>
+    <ul>
+        <li><strong>Internet</strong> — Para login com Google, sincronização em nuvem e download de versões bíblicas adicionais</li>
+        <li><strong>Armazenamento (leitura)</strong> — Para acesso ao banco de dados bíblico local</li>
+        <li><strong>Text-to-Speech</strong> — Para leitura em áudio dos versículos</li>
+        <li><strong>Widget de tela inicial</strong> — Para exibição do versículo diário</li>
+        <li><strong>WorkManager / Alarmes</strong> — Para atualização periódica do widget</li>
+    </ul>
 
-    <h2>4. Permissões</h2>
-    <p>O aplicativo solicita apenas as permissões estritamente necessárias para a leitura do banco de dados bíblico e funcionamento da interface offline.</p>
+    <!-- 9 -->
+    <h2>9. Retenção e Exclusão de Dados</h2>
+    <p>Os dados locais (marcadores, notas, histórico de leitura) podem ser excluídos a qualquer momento desinstalando o aplicativo. Os dados armazenados em nuvem (Firebase Firestore), vinculados à conta Google, permanecem disponíveis enquanto a conta existir.</p>
+    <p>Para solicitar a exclusão dos seus dados em nuvem, entre em contato pelo e-mail abaixo. Atenderemos sua solicitação em até 30 dias.</p>
 
-    <h2>5. Contato</h2>
-    <p>Para dúvidas, sugestões ou solicitações relacionadas à sua privacidade, entre em contato através do e-mail:</p>
-    <p><strong>E-mail:</strong> <a href="mailto:celhinho16@mail.com">celhinho16@mail.com</a></p>
+    <!-- 10 -->
+    <h2>10. Segurança</h2>
+    <p>Adotamos práticas de segurança padrão da indústria, incluindo o uso de serviços certificados da Google (Firebase) com criptografia em trânsito (HTTPS/TLS) e em repouso. Nenhuma senha é armazenada por nós — a autenticação é delegada completamente ao Google.</p>
+
+    <!-- 11 -->
+    <h2>11. Público-Alvo e Menores de Idade</h2>
+    <p>Este aplicativo é destinado a usuários com <strong>18 anos ou mais</strong>. Não coletamos intencionalmente dados de crianças ou adolescentes. Caso tome conhecimento de que um menor de idade forneceu dados pessoais, entre em contato para que possamos tomar as medidas adequadas.</p>
+
+    <!-- 12 -->
+    <h2>12. Publicidade</h2>
+    <p>O aplicativo <strong>não exibe anúncios</strong> atualmente e <strong>não utiliza nenhum SDK de publicidade</strong> (como Google AdMob). Caso isso mude no futuro, esta política será atualizada com antecedência e os usuários serão informados.</p>
+
+    <!-- 13 -->
+    <h2>13. Alterações nesta Política</h2>
+    <p>Esta política pode ser atualizada periodicamente para refletir mudanças no aplicativo ou na legislação aplicável. Recomendamos verificá-la regularmente. A data da última atualização está sempre indicada no topo deste documento.</p>
+
+    <!-- 14 -->
+    <h2>14. Contato</h2>
+    <p>Para dúvidas, solicitações de exclusão de dados ou qualquer questão relacionada à sua privacidade, entre em contato:</p>
+    <ul>
+        <li><strong>E-mail:</strong> <a href="mailto:celhinho16@mail.com">celhinho16@mail.com</a></li>
+        <li><strong>Responsável:</strong> Célio JR.</li>
+    </ul>
 
     <div class="footer">
-        <p>Última atualização: 15 de abril de 2026</p>
-        <p>Responsável: Célio JR.</p>
+        <p>Política de Privacidade — Bíblia Offline de Estudo</p>
+        <p>Última atualização: 30 de abril de 2026 &nbsp;|&nbsp; Versão 2.0</p>
+        <p style="margin-top:8px; font-size:0.82em;">Esta política foi elaborada com base na análise do código-fonte do aplicativo e em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018) e as políticas de publicação do Google Play.</p>
     </div>
-</div>
 
+</div>
 </body>
 </html>
